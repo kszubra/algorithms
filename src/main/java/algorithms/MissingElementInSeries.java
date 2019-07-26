@@ -6,6 +6,13 @@ import java.util.List;
 
 public class MissingElementInSeries {
 
+    /**
+     * Method receives an array representing a series of unique numbers from 0-N where one value is missing.
+     * Method finds and returns the missing value
+     *
+     * @param inputArray Array representing a series of unique numbers
+     * @return
+     */
     public static int findMissingElement(Integer[] inputArray) {
         List<Integer> series = new ArrayList(Arrays.asList(inputArray));
         int expectedSeriesSum = (series.size() * (series.size()+1) ) / 2;
